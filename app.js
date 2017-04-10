@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 const sass = require('node-sass-middleware');
 
 var index = require('./routes/index');
+var landing = require('./routes/landing');
+var generic = require('./routes/generic');
+var elements = require('./routes/elements');
 var users = require('./routes/users');
 
 var app = express();
@@ -30,6 +33,10 @@ app.use(sass({
 }));
 
 app.use('/', index);
+app.use('/home', index);
+app.use('/landing', landing);
+app.use('/elements', elements);
+app.use('/generic', generic);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

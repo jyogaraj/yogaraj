@@ -1,0 +1,184 @@
+doctype html
+
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    //if lte IE 8
+      script(src='js/ie/html5shiv.js')
+    link(rel='stylesheet', href='css/main.css')
+    //if lte IE 9
+      link(rel='stylesheet', href='css/ie9.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='css/ie8.css')
+  body
+    // Wrapper
+    #wrapper
+      // Header
+      // Note: The "styleN" class below should match that of the banner element.
+      header#header.alt.style2
+        a.logo(href='index.html')
+          strong Forty
+          span by HTML5 UP
+        nav
+          a(href='#menu') Menu
+      // Menu
+      nav#menu
+        ul.links
+          li
+            a(href='/') Home
+          li
+            a(href='/landing') Landing
+          li
+            a(href='generic.html') Generic
+          li
+            a(href='elements.html') Elements
+        ul.actions.vertical
+          li
+            a.button.special.fit(href='#') Get Started
+          li
+            a.button.fit(href='#') Log In
+      // Banner
+      // Note: The "styleN" class below should match that of the header element.
+      section#banner.style2
+        .inner
+          span.image
+            img(src='img/pic07.jpg', alt='')
+          header.major
+            h1 Landing
+          .content
+            p
+              | Lorem ipsum dolor sit amet nullam consequat
+              br
+              | 								sed veroeros. tempus adipiscing nulla.
+      // Main
+      #main
+        // One
+        section#one
+          .inner
+            header.major
+              h2 Sed amet aliquam
+            p
+              | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.
+        // Two
+        section#two.spotlights
+          section
+            a.image(href='generic.html')
+              img(src='img/pic08.jpg', alt='', data-position='center center')
+            .content
+              .inner
+                header.major
+                  h3 Orci maecenas
+                p
+                  | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                ul.actions
+                  li
+                    a.button(href='generic.html') Learn more
+          section
+            a.image(href='generic.html')
+              img(src='img/pic09.jpg', alt='', data-position='top center')
+            .content
+              .inner
+                header.major
+                  h3 Rhoncus magna
+                p
+                  | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                ul.actions
+                  li
+                    a.button(href='generic.html') Learn more
+          section
+            a.image(href='generic.html')
+              img(src='img/pic10.jpg', alt='', data-position='25% 25%')
+            .content
+              .inner
+                header.major
+                  h3 Sed nunc ligula
+                p
+                  | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+                ul.actions
+                  li
+                    a.button(href='generic.html') Learn more
+        // Three
+        section#three
+          .inner
+            header.major
+              h2 Massa libero
+            p
+              | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
+            ul.actions
+              li
+                a.button.next(href='generic.html') Get Started
+      // Contact
+      section#contact
+        .inner
+          section
+            form(method='post', action='#')
+              .field.half.first
+                label(for='name') Name
+                input#name(type='text', name='name')
+              .field.half
+                label(for='email') Email
+                input#email(type='text', name='email')
+              .field
+                label(for='message') Message
+                textarea#message(name='message', rows='6')
+              ul.actions
+                li
+                  input.special(type='submit', value='Send Message')
+                li
+                  input(type='reset', value='Clear')
+          section.split
+            section
+              .contact-method
+                span.icon.alt.fa-envelope
+                h3 Email
+                a(href='#') information@untitled.tld
+            section
+              .contact-method
+                span.icon.alt.fa-phone
+                h3 Phone
+                span (000) 000-0000 x12387
+            section
+              .contact-method
+                span.icon.alt.fa-home
+                h3 Address
+                span
+                  | 1234 Somewhere Road #5432
+                  br
+                  | 										Nashville, TN 00000
+                  br
+                  | 										United States of America
+      // Footer
+      footer#footer
+        .inner
+          ul.icons
+            li
+              a.icon.alt.fa-twitter(href='#')
+                span.label Twitter
+            li
+              a.icon.alt.fa-facebook(href='#')
+                span.label Facebook
+            li
+              a.icon.alt.fa-instagram(href='#')
+                span.label Instagram
+            li
+              a.icon.alt.fa-github(href='#')
+                span.label GitHub
+            li
+              a.icon.alt.fa-linkedin(href='#')
+                span.label LinkedIn
+          ul.copyright
+            li © Untitled
+            li
+              | Design: 
+              a(href='https://html5up.net') HTML5 UP
+    // Scripts
+    script(src='js/jquery.min.js')
+    script(src='js/jquery.scrolly.min.js')
+    script(src='js/jquery.scrollex.min.js')
+    script(src='js/skel.min.js')
+    script(src='js/util.js')
+    //if lte IE 8
+      script(src='js/ie/respond.min.js')
+    script(src='js/main.js')
